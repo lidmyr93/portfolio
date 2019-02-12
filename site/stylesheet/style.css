@@ -2,7 +2,6 @@
 body, html {
   font-family: 'Cabin', sans-serif;
   margin: 0;
-  background: rgba(219, 219, 219, 0.733);
 }
 
 body a, html a {
@@ -195,22 +194,62 @@ nav ul li {
 /* Header and Meny end */
 
 /* Main section */
-main{
-  padding: 0 10px 0 10px;
+main > *{
+  padding: 0 10px 5px 10px;
 }
 main img{
   display: block;
   width: auto;
-  margin: 10px auto 40px auto;
-  padding-bottom: 1000px;
+  margin: 10px auto 10px auto;
 }
+main h1{
+  text-align: center;
+}
+.section-one{
+  background: rgba(219, 219, 219, 0.733);
+}
+.section-two{
+  background: rgba(255, 255, 255, 0.733);
+}
+table{
+  width: 100%
+}
+th{
+  text-align: left;
+}
+.tableone{
+  background: rgba(197, 196, 196, 0.733);
+}
+.tabletwo{
+  background: rgba(238, 235, 235, 0.733);
+}
+td:nth-child(even){
+  text-align: right;
+}
+.section-one img{
+  width: 100%;
+  height: auto;
+}
+/* portfolio css ends */
+
 /* Main section Ends*/
 
 /* Footer */
 footer{
   background: black;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 footer a{
   color: rgb(245, 115, 9);
+}
+footer a img {
+  width: 50px;
+  height: 50px;
+  padding: 10px 10px;
+}
+footer a span{
+  display: none;
 }
 /* Footer Ends */
