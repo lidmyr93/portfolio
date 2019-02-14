@@ -6,202 +6,36 @@ body, html {
   background: #eeeeee;
 }
 
-body a, html a {
+body a{
   text-decoration: none;
 }
-
-header {
-  padding: 2em;
+/* Header and meny */
+header{
+  display: flex;
   background: black;
 }
-
-header .logo {
-  color: rgb(245, 115, 9);
-  font-weight: bold;
-  font-size: 25px;
+header div h1, header div h2{
+  color: orange;
+  margin: 0 0 0 5px;
+  
 }
-
-header .menu-btn {
-  float: right;
-  cursor: pointer;
-  color: rgb(245, 115, 9);
-  font-size: 25px;
-}
-
-section {
-  padding: 4em;
-}
-
-section h1 {
-  font-size: 4em;
-  margin: 1em auto;
-  width: 70%;
-  text-transform: uppercase;
-}
-
-section h1::before {
-  content: '';
-  border-top: 6px solid black;
-  display: block;
-}
-
-nav {
-  position: absolute;
-  background: black;
-  padding: 2em;
-  width: calc(100% - 4em);
-  height: calc(100vh - 4em);
-  display: none;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
-nav .close-button {
-  float: right;
-  cursor: pointer;
-  opacity: 0;
-  color: rgb(245, 115, 9);
-  font-size: 25px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 10% auto 0 auto;
-  padding: 0;
-  display: -ms-grid;
-  display: grid;
-      grid-template-columns:1;
-      grid-template-rows: repeat(4, auto);
-  width: 80%;
-}
-
-nav ul a {
-  color: rgb(245, 115, 9);
-  font-weight: bold;
+header div h1{
+  border-bottom: 5px solid orange;
+  padding-bottom: 5px;
   font-size: 2em;
-  border-bottom: 2px solid rgb(245, 115, 9);
 }
-
-nav ul span {
-  color: rgb(245, 115, 9);
-  display: block;
+header div h2{
   font-size: 1em;
-  margin-top: 20px;
 }
+/* Header and meny ends */
 
-nav ul li {
-  opacity: 0;
-  padding-top: 50px;
-  text-align: center;
-}
-
-.show-menu {
-  display: block;
-  -webkit-animation: slide-menu 1s ease-in forwards;
-          animation: slide-menu 1s ease-in forwards;
-}
-
-.show-menu .close-button {
-  -webkit-animation: show-x 1s 1s forwards;
-          animation: show-x 1s 1s forwards;
-}
-
-.show-menu li:nth-of-type(1) {
-  -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
-          animation: menu-item-anim .6s forwards 1s ease-in-out;
-}
-
-.show-menu li:nth-of-type(2) {
-  -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.2s ease-in-out;
-}
-
-.show-menu li:nth-of-type(3) {
-  -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-}
-
-.show-menu li:nth-of-type(4) {
-  -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.8s ease-in-out;
-}
-
-@-webkit-keyframes slide-menu {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@keyframes slide-menu {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@-webkit-keyframes show-x {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes show-x {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes menu-item-anim {
-  from {
-    -webkit-transform: translateY(70%);
-            transform: translateY(70%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes menu-item-anim {
-  from {
-    -webkit-transform: translateY(70%);
-            transform: translateY(70%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* Header and Meny end */
-
-/* Main section */
-/* main > *{
-  padding: 0 10px 5px 10px;
-} */
-main img{
+main img, main div img{
   display: block;
   width: auto;
+  margin: 0 auto;
+}
+.mobile-img{
+  max-width: 90%;
   margin: 0 auto;
 }
 main h1{
