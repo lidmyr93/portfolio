@@ -4,29 +4,73 @@ body, html {
   margin: 0;
   font-size: 1em;
   background: #eeeeee;
+  box-sizing: border-box;
 }
 
 body a{
   text-decoration: none;
 }
 /* Header and meny */
-header{
+header {
+  background-color: black;
   display: flex;
-  background: black;
+  width: 100%;
+  justify-content: space-between;
 }
-header div h1, header div h2{
-  color: orange;
-  margin: 0 0 0 5px;
-  
-}
-header div h1{
-  border-bottom: 5px solid orange;
+header div{
+  width: auto;
+  margin-left: 30px;
+  padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 2em;
+  min-height: 64px;
 }
-header div h2{
+header h1{
+  color: orange;
+  border-bottom: 2px solid orange;
+  margin: 0;
+  padding-bottom: 1px;
+}
+header h2{
+  color: orange;
+  margin: 0;
   font-size: 1em;
 }
+.hamburger {
+  display: block;
+  font-size: 3em;
+  text-decoration: none;
+  color:orange;
+  cursor: pointer;
+  margin: auto 30px auto 0;
+}
+nav {
+  display: none;
+  padding: 0 30px 0 10px;
+  margin: 0;
+  background-color: #bbddff;
+  top: 4.45em;
+  position: fixed;
+  width: 100%;
+}
+nav a {
+  color: #000;
+  font-size: 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+.show-nav {
+    display: block;
+    transition: 1s ease-in-out;
+    background: black;
+  }
+  .show-nav ul{
+    list-style-type: none;
+  }
+  .show-nav ul li a{
+    color: orange;
+  }
+
 /* Header and meny ends */
 
 main img, main div img{

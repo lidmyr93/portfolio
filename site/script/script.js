@@ -1,13 +1,10 @@
-//Let's Create the JavaScript Part. 
+const nav = document.querySelector('nav');
+const menyknapp = document.querySelector('.hamburger');
 
-const overlay = document.getElementById('overlay');
-const closeMenu = document.getElementById('close-menu');
+menyknapp.addEventListener('click', toggleMenu);
 
 
-document.getElementById('open-menu') .addEventListener('click', function() {
-    overlay.classList.add('show-menu');
-});
-
-document.getElementById('close-menu').addEventListener('click', function(){
-    overlay.classList.remove('show-menu')
-})
+function toggleMenu() {
+    nav.classList.toggle('show-nav');
+    menyknapp.innerHTML = (menyknapp.innerHTML == '☰') ? '&#10761;' : '&#9776';
+}
