@@ -154,3 +154,103 @@ footer a span{
   display: none;
 }
 /* Footer Ends */
+
+/* desktop */
+
+@media (min-width: 768px){
+  
+  header{
+    justify-content: space-around;
+  }
+  .hamburger{display: none;}
+  nav{
+    display: inline-block;
+    position: initial;
+    width: auto;
+    background: black;
+    align-self: center;
+  }
+  nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+  display: inline-block;
+  padding-left: 20px;
+}
+nav ul li a{
+  display: block;
+  color: orange;
+  font-size: 1.5em;
+}
+nav ul li a:hover{
+ color: darkorange;
+ zoom: 101%;
+}
+/* main */
+main{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px 10px;
+  margin: 5px 10%;;
+}
+.container{
+  width: auto;
+  margin: 0;
+  padding: 0 auto 0 auto;
+}
+.aboutme{
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+.utbildning{
+  grid-row: 2;
+  grid-column: 1;
+}
+.exp{
+  grid-row: 2;
+  grid-column: 2;
+}
+.praktik{
+  grid-row: 3;
+  grid-column: 1;
+}
+.skills{
+  grid-row: 3;
+  grid-column: 2;
+}
+.portfolio{
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+.design{
+  grid-row: 2;
+  grid-column: 1 / span 2;
+ /*  width: 100%; */
+}
+.code{
+  grid-row: 3;
+  grid-column: 1 / span 2;
+ /*  width: 100%; */
+}
+.test{
+  width: 48%;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.float-r{
+  float: right;
+}
+.mobile-img{
+  min-height: 300px;
+}
+.text-center{
+  text-align: center;
+}
+}
