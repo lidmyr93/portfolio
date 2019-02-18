@@ -69,12 +69,17 @@ nav a {
     display: block;
     transition: 1s ease-in-out;
     background: black;
+    text-align: right;
   }
   .show-nav ul{
     list-style-type: none;
   }
+  .show-nav ul li:first-child{
+    margin-bottom: 10px;
+  }
   .show-nav ul li a{
     color: orange;
+    border-bottom: 1px solid orange;
   }
 
 /* Header and meny ends */
