@@ -26,6 +26,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 header div{
   width: auto;
@@ -39,12 +40,13 @@ header h1{
   border-bottom: 2px solid orange;
   margin: 0;
   padding-bottom: 1px;
+  font-size: 1.5em;
 }
 header h2{
   color: orange;
   margin: 0;
-  font-size: 1em;
-  font-family: 'Patrick Hand', cursive;
+  font-size: 1.2em;
+  font-family: 'Pinyon Script', cursive;
 }
 .hamburger {
   display: block;
@@ -52,7 +54,9 @@ header h2{
   text-decoration: none;
   color:orange;
   cursor: pointer;
-  margin: auto 30px auto 0;
+  margin-right: 5%;
+  margin-bottom: 2px;
+  padding: 0;
 }
 nav {
   display: none;
@@ -74,6 +78,8 @@ nav a {
     display: block;
     background: rgba(0, 0, 0, 0.788);
     text-align: right;
+    position: absolute;
+    top: 66px;
   }
   .show-nav ul{
     list-style-type: none;
