@@ -11,7 +11,12 @@ body, html {
  /*  width: 100vh;
   max-width: 100%; */
 }
-
+.clearfix{
+  clear: both;
+}
+u{
+  text-decoration: none;
+}
 body a{
   text-decoration: none;
 }
@@ -53,7 +58,7 @@ nav {
   display: none;
   padding: 0 30px 0 10px;
   margin: 0;
-  background-color: #bbddff;
+  /* background-color: #bbddff; */
   top: 4.45em;
   position: fixed;
   width: 100%;
@@ -67,8 +72,7 @@ nav a {
 }
 .show-nav {
     display: block;
-    transition: 1s ease-in-out;
-    background: black;
+    background: rgba(0, 0, 0, 0.788);
     text-align: right;
   }
   .show-nav ul{
@@ -83,7 +87,12 @@ nav a {
   }
 
 /* Header and meny ends */
-
+.portrait{
+  width: 80%;
+  height: auto;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 main img, main div img{
   display: block;
   width: auto;
@@ -107,7 +116,7 @@ th{
   text-align: left;
 }
 th, td{
-  padding: 0 5px 0 5px;
+  padding: 5px 5px 0 5px;
 }
 /* .tableone{
   background: rgba(197, 196, 196, 0.733);
@@ -123,10 +132,7 @@ td:nth-child(even){
   height: auto;
 }
 main div ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  list-style-position: inside;
-  padding-left: 0px;
+  
 }
 .container{
   width: auto;
@@ -173,13 +179,13 @@ footer a span{
   display: none;
 }
 /* Footer Ends */
-
 /* desktop */
+
 
 @media (min-width: 768px){
   
-  header{
-    justify-content: space-around;
+  header > div{
+    margin-left: 10%;
   }
   .hamburger{display: none;}
   nav{
@@ -188,6 +194,8 @@ footer a span{
     width: auto;
     background: black;
     align-self: center;
+    margin-right: 10%;
+    padding: 0;
   }
   nav ul{
     display: inline-block;
@@ -217,6 +225,17 @@ main{
   grid-gap: 10px 10px;
   margin: 5px 10%;;
 }
+.portrait{
+  width: 30%;
+  height: auto;
+  margin: 10px 0;
+}
+.me-text{
+  width: 40%;
+  padding-left: 7%;
+  line-height: 1.2em;
+
+}
 .container{
   width: auto;
   margin: 0;
@@ -225,6 +244,9 @@ main{
 .aboutme{
   grid-row: 1;
   grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .utbildning{
   grid-row: 2;
@@ -241,6 +263,7 @@ main{
 .skills{
   grid-row: 3;
   grid-column: 2;
+  display: grid;
 }
 .portfolio{
   grid-row: 1;
@@ -286,5 +309,14 @@ main{
 .order-4{
   order: 4;
 }
-
+.margin-left-5{
+  margin-left: 5%;
+}
+footer{
+  justify-content: space-around;
+}
+footer a img{
+  height: 75px;
+  width: 75px;
+}
 }
