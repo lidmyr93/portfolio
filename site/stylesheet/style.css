@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 @import url("https://fonts.googleapis.com/css?family=Cabin");
 body, html {
   font-family: 'Cabin', sans-serif;
@@ -5,6 +8,8 @@ body, html {
   font-size: 1em;
   background: #eeeeee;
   box-sizing: border-box;
+ /*  width: 100vh;
+  max-width: 100%; */
 }
 
 body a{
@@ -34,6 +39,7 @@ header h2{
   color: orange;
   margin: 0;
   font-size: 1em;
+  font-family: 'Patrick Hand', cursive;
 }
 .hamburger {
   display: block;
@@ -131,6 +137,14 @@ main div ul{
 }
 .adress-list{
   list-style-type: none;
+  display: block;
+}
+.test > p{
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 /* Main section Ends*/
@@ -255,4 +269,17 @@ main{
 .text-center{
   text-align: center;
 }
+.adress-list{
+  display: grid;
+}
+.order-2{
+  order: 2
+}
+.order-3{
+  order: 3;
+}
+.order-4{
+  order: 4;
+}
+
 }
